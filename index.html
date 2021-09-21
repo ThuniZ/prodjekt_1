@@ -8,10 +8,12 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://use.fontawesome.com/9ec69476b0.js"></script>
     </head>
     <body>
       <header class="header">
-        <a><h1><span>R</span>andom <span>F</span>öretags<span>N</span>amn</h1></a>
+        <a class="logo-max"><h1><span>F</span>öretags<span>N</span>amn</h1></a>
+        <a class="logo-mobil"><h1><span>F</span><span>N</span></h1></a>
         <nav class="Links">
             <a>Hem</a>
             <a>Tjänster</a>
@@ -26,39 +28,62 @@
         <h1>Hejsan</h1>
         </div>
 
+      
+      <section  id="about-box-section">
+        <article class="box-card-info">
+            <div class="box-wrap">
+                <i class="fa fa-archive"></i>
+                <h2>What we have done before</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sint ullam mollitia eius doloribus similique numquam atque architecto voluptatum harum! Harum maxime vero expedita nobis cumque iste illum dicta obcaecati!</p>
+            
+        </article>
+        <article class="box-card-info">
+            <div class="box-wrap">
+                <i class="fa fa-android"></i>
+                <h2>What we can do for you</h2>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, fugit culpa consectetur ex sunt aspernatur neque saepe sapiente, nisi nemo dolorem error. Laudantium voluptatem eos mollitia minus quas, libero ducimus.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, fugit culpa consectetur ex sunt aspernatur neque saepe sapiente, nisi nemo dolorem error. Laudantium voluptatem eos mollitia minus quas, libero ducimus.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, fugit culpa consectetur ex sunt aspernatur neque saepe sapiente, nisi nemo dolorem error. Laudantium voluptatem eos mollitia minus quas, libero ducimus.</p>
+        </article>
+
+
+
       </section>
+
+
         
     
       <footer id="form-section">
+          <div id="contact-wrapper">
+            <h2 class="h-class"><span>S</span>hare <span>S</span>uff<span>!</span></h2>
+             <div class="social-icons">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-github"></i>
+                </div> 
+            </div>
         <form onsubmit="sendFormInfo()">
             <input type="text" placeholder="Email" required/>
             <input type="text" placeholder="Subject" required/>
             <textarea type="text" placeholder="What can we help you with?" required></textarea>
             <button type="submit" required>Thank you!</button>
         </form>
-        <div id="contact-wrapper">
-            <h2><span>S</span>hare <span>S</span>uff<span>!</span></h2>
-            <div class="social-icons">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                <i class="fa fa-github"></i>
+        
+            <div class="info-contact-section">
+                <a href="mailto:anton@thunberg.nu">Mail us!</a>
+                <div class="adress-section">
+                    <strong><p>Adress</p></strong>
+                    <p>Puserviksgatan 3</p>
+                    <p>216 32</p>
+                    <p>Gothenburg</p>
+                </div>
             </div>
 
 
-            <a href="mailto:anton@thunberg.nu">Mail us!</a>
-            <strong><p>Adress</p></strong>
-                <p>Puserviksgatan 3</p>
-                <p>216 32</p>
-                <p>Gothenburg</p>
-
-
-        </div>
-
-
-
-
-
     </footer>
+</section>
     
     </body>
 </html>

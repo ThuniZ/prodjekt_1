@@ -60,9 +60,22 @@ body {
     margin: 0 10px;
 }
 
+@media screen and (max-width: 800px) {
+    .logo-max {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .logo-mobil {
+        display: none;
+    }
+}
+
 #main-mp4-section {
     width: 100%;
-    position: relative;
+    position: absolute;
+    
 }
 
 #main-mp4-section video {
@@ -91,26 +104,74 @@ body {
     font-size: 50px;
 }
 
+#about-box-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-card-info {
+    width: 300px;
+    height: 60vh;
+    background-color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 30px;
+    margin-left: 50px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+    overflow: auto;
+}
+
+.box-card-info:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.box-card-info p {
+    padding: 20px;
+}
+
+.box-wrap {
+    width: 100%;
+    background-color: rgb(248, 162, 3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box-wrap i {
+    font-size: 40px;
+    color: black;
+}
+
 
 
 
 footer {
     background-color: rgb(207, 46, 46);
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
 }
 
 #form-section form {
         background-color: white;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-content: center;
         border-radius: 10px;
-        width: 45%;
-        margin: 2.5%;
-        padding: 10px;
+        width: 90%;
+        
+        padding: 20px;
 
 }
 #form-section form input, 
@@ -142,7 +203,7 @@ footer {
 
 #form-section form button:hover {
     background-color: black;
-    color: red;
+    color: gold;
 }
 
 .social-icons {
@@ -152,19 +213,43 @@ footer {
 }
 
 .social-icons i {
-    margin: 50px;
-    font-size: 100px;
-    padding: 20px;
+    margin: 10px;
+    font-size: 50px;
+    padding: 10px;
+    transition: 0.5s;
 }
+
+.social-icons i:hover {
+    color: gold;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 
 
 #contact-wrapper {
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
+    align-items: center;
 }
 
+.h-class{
+    font-size: 50px;
+}
 
 #contact-wrapper span {
-    color:whitesmoke;
+    color:gold;
+}
+
+.info-contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.adress-section {
+
 }

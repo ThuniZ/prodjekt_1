@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+.header {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+.header h1 {
+  margin-top: -500px;
+  transition: 0.5s;
+  animation-name: LogoSlide;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  
+}
+
+@keyframes LogoSlide {
+    from {
+      margin-top: -500px;
+    }
+    to {
+      margin-top: 0;
+    }
+  }
+
+.header span {
+    color: blue;
+}
+
+.header h1:hover {
+    color: rgb(27, 27, 177);
+    transform: scale(1.01);
+}
+
+.header h1:hover span {
+    color: black;
+    transition: 0.5s;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+#main-mp4-section {
+    width: 100%;
+    position: relative;
+}
+
+#main-mp4-section video {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    object-fit: cover;
+    
+}
+
+.text-over-video {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.text-over-video h1 {
+    color: black;
+    font-size: 50px;
+}
+
+
+
+
+footer {
+    background-color: rgb(207, 46, 46);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#form-section form {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        border-radius: 10px;
+        width: 45%;
+        margin: 2.5%;
+        padding: 10px;
+
+}
+#form-section form input, 
+#form-section form textarea {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #acacac;
+  font-size: 15px;
+}
+
+#form-section form input:focus,
+#form-section form textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+#form-section form button {
+    align-self: flex-end;
+    background-color: transparent;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#form-section form button:hover {
+    background-color: black;
+    color: red;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.social-icons i {
+    margin: 50px;
+    font-size: 100px;
+    padding: 20px;
+}
+
+
+#contact-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#contact-wrapper span {
+    color:whitesmoke;
+}

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -7,11 +8,19 @@ body {
     scroll-behavior: smooth;
   }
 
-  a {
+a:link {
       text-decoration: none;
+      color: black;
   }
 
-.header {
+  a:visited {
+      text-decoration: none;
+      color: black;
+  }
+
+/*start of Header section*/
+
+#header {
     background-color: red;
     display: flex;
     align-items: center;
@@ -24,7 +33,7 @@ body {
     border-bottom: 5px solid white;
 }
 
-.header h1 {
+#header h1 {
   margin-top: -500px;
   transition: 0.5s;
   animation-name: LogoSlide;
@@ -44,16 +53,16 @@ body {
     }
   }
 
-.header span {
+#header span {
     color: blue;
 }
 
-.header h1:hover {
+#header h1:hover {
     color: rgb(27, 27, 177);
     transform: scale(1.01);
 }
 
-.header h1:hover span {
+#header h1:hover span {
     color: black;
     transition: 0.5s;
 }
@@ -75,6 +84,8 @@ body {
         display: none;
     }
 }
+
+/*End of Header section*/
 
 #main-mp4-section {
     width: 100%;
@@ -112,6 +123,30 @@ body {
     font-size: 50px;
 }
 
+.main-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid gold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+}
+
+.main-btn a:hover {
+    background-color: gold;
+    border:none;
+    transform: scale(1.05);
+}
+
+.main-btn a{
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+
+}
+
 #about-box-section {
     display: flex;
     flex-direction: row;
@@ -127,9 +162,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 30px;
     margin-left: 50px;
+    margin-bottom: 200px;
     border-radius: 20px;
     transition: all 0.5s ease 0s;
-    overflow: auto;
+    
 }
 
 .box-card-info:hover {
@@ -139,7 +175,8 @@ body {
 
 .box-card-info p {
     padding: 20px;
-    
+    overflow: auto;
+    height: 33vh;
 }
 
 .box-wrap {
@@ -152,6 +189,7 @@ body {
     padding: 30px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 40%;
 }
 
 .box-wrap i {
@@ -161,7 +199,7 @@ body {
 
 
 
-
+/*start of footer section*/
 footer {
     background-color: rgb(207, 46, 46);
     display: flex;
@@ -306,4 +344,74 @@ footer {
 .adress-section h3 {
     color: gold;
     
+}
+
+/*End of footer section*/
+/*Start of about page*/
+
+.about-info-box-section {
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.about-info-box {
+    width: 300px;
+    height: 60vh;
+    background-color: rgb(156, 26, 26);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 30px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+    margin-top: none;
+}
+
+.about-info-box:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.about-info-box p {
+    padding: 20px;
+    overflow: auto;
+    height: 33vh;
+}
+
+.about-box {
+    width: 100%;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 40%;
+}
+
+.blank-face {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid gold;
+}
+
+.about-rubrik {
+    position: relative;
+    width: 100%;
+    height: calc(40vh - 100px);
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    font-size: 50px;
 }

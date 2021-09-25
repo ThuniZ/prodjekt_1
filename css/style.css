@@ -67,10 +67,15 @@ a:link {
     transition: 0.5s;
 }
 
-.links a {
+.Links {
+    
+}
+
+.Links a {
     text-decoration: none;
     color: black;
     margin: 0 10px;
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -350,7 +355,7 @@ footer {
 /*Start of about page*/
 
 .about-info-box-section {
-    height: 100vh;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -406,7 +411,7 @@ footer {
 .about-rubrik {
     position: relative;
     width: 100%;
-    height: calc(40vh - 100px);
+    height: calc(50vh - 50px);
     color: gold;
     display: flex;
     flex-direction: column;
